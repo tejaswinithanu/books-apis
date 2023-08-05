@@ -1,0 +1,29 @@
+GET http://localhost:3007/books/?search_q=agat
+###
+
+GET http://localhost:3007/books/2/
+###
+
+POST http://localhost:3007/books/
+Content-Type:application/json
+
+{
+    "id":6,
+     "title":"Catcher in the Rye",
+     "author":"J.D. Salinger",
+     "genre":"History",
+     "rating":3.5,
+     "imgUrl":"https://orion-uploads.openroadmedia.com/sm_2f32b6-catcher-in-the-rye-red.jpg"
+}
+###
+
+PUT http://localhost:3007/books/6/
+Content-Type:application/json
+
+{
+    "genre":"History"
+}
+###
+DELETE http://localhost:3007/books/6/
+###
+
